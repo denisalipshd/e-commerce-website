@@ -1,0 +1,359 @@
+:root {
+  --red-color: #db4444;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px; /* beri jarak antara teks dan underline */
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Garis bawah animasi */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--red-color);
+  transition: width 0.3s ease;
+}
+
+/* Hover: underline muncul dari kiri */
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Jika aktif: underline langsung muncul */
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Jarak underline (kalau kamu tetap pakai text-decoration, bisa diatur ini juga) */
+.nav-link.active {
+  text-decoration: none;
+}
+
+.badger {
+  width: 13px;
+  background: var(--red-color);
+  height: 30px;
+  border-radius: 4px;
+}
+
+.sub {
+  color: var(--red-color);
+  font-weight: bold;
+}
+
+/* flash sale style */
+.flash-sale-timer {
+  display: flex;
+}
+
+.flash-sale-box {
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 55px;
+}
+
+.flash-sale-box .value {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.flash-sale-box .label {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.scroll-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0.5rem;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.product-card {
+  flex: 0 0 auto;
+  width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 5px;
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: orange;
+}
+
+.scroll-btn {
+  background-color: #eee;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.scroll-btn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.scroll-btn:hover {
+  background-color: var(--red-color);
+}
+
+.btn-custom {
+  border: none;
+  padding: 8px 16px;
+  font-size: small;
+  border-radius: 4px;
+  background: var(--red-color);
+  color: white;
+}
+
+/* category style */
+.category-card {
+  flex: 0 0 auto;
+  width: 200px;
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  padding: 14px 8px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.category-card:hover {
+  background-color: var(--red-color); /* background merah saat hover */
+  color: white;
+}
+
+.category-card:hover span {
+  color: white;
+}
+
+.category-card-camera {
+  flex: 0 0 auto;
+  width: 200px;
+  border: 3px solid #ddd;
+  border-radius: 4px;
+  padding: 14px 8px;
+  position: relative;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card-camera img {
+  filter: brightness(0);
+}
+
+.category-card-camera:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.category-card-camera:hover {
+  background-color: var(--red-color); /* background merah saat hover */
+  color: white;
+}
+
+.category-card-camera:hover span {
+  color: white;
+}
+
+/* featured style */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom utama */
+  grid-template-rows: auto auto; /* Baris utama */
+  gap: 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.item-1 {
+  grid-row: span 2; /* Item ini mengambil 2 baris */
+}
+
+.item-2 {
+  grid-column: 2; /* Item ini di kolom kedua, baris pertama (default) */
+  grid-row: 1; /* Eksplisitkan untuk kejelasan */
+  /* Opsional: Tambahkan min-height jika Anda ingin tingginya mendekati setengah dari item-1 */
+  /* min-height: 250px; */
+}
+
+.bottom-right {
+  display: grid; /* Tetap menjadi grid container */
+  /* *** PERUBAHAN DI SINI *** */
+  /* Buat dua kolom di dalam bottom-right agar item-3 dan item-4 berdampingan */
+  grid-template-columns: 1fr 1fr;
+  /* *** END PERUBAHAN *** */
+  grid-column: 2; /* bottom-right tetap di kolom kedua dari grid utama */
+  grid-row: 2; /* bottom-right tetap di baris kedua dari grid utama */
+  gap: 15px; /* Jarak antara item-3 dan item-4 */
+}
+
+/* Gaya dasar untuk semua item gambar */
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.item {
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* style footer */
+.footer {
+  background-color: black;
+  padding: 60px 15px 30px;
+  color: #fafafa;
+}
+
+.grid-footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.grid-footer p {
+  font-size: 14px;
+}
+
+.grid-footer h3 {
+  margin-bottom: 10px;
+}
+
+.grid-footer .input-mail {
+  border-radius: 12px;
+  border: 1px solid #FAFAFA;
+  width: 240px;
+  padding: 6px 10px;
+}
+
+.grid-footer input {
+  background: transparent;
+  padding: 0 10px 0 5px;
+  margin-right: 10px;
+  width: 190px;
+  border: none;
+}
+
+.grid-footer input:focus {
+  outline: none;
+}
+
+@media (max-width: 992px) {
+  .btn-produk {
+    width: 100%;
+  }
+
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .item-1,
+  .item-2 {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .bottom-right {
+    grid-column: 1;
+    grid-row: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+
+  .item {
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    gap: 10px;
+  }
+
+  .bottom-right {
+    gap: 10px;
+  }
+
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0 auto;
+    gap: 30px;
+    max-width: 1200px;
+  }
+}

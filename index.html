@@ -1,0 +1,1132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devnis SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-3 py-2">
+      <div class="container d-flex justify-content-between align-items-center">
+        <!-- Brand -->
+        <a class="navbar-brand fw-bold" href="#">Exclusive</a>
+
+        <!-- Toggler (mobile) -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-3">
+            <!-- Search -->
+            <div class="search-box position-relative">
+              <input
+                class="form-control form-control-sm pe-5 small"
+                type="text"
+                placeholder="Search"
+              />
+              <button
+                class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent pe-2"
+              >
+                <img src="assets/img/Component 2.png" alt="" class="small" />
+              </button>
+            </div>
+            <!-- Icons -->
+            <a href="#" class="text-dark">
+              <img src="assets/img/Wishlist.png" alt="" />
+            </a>
+            <a href="#" class="text-dark">
+              <img src="assets/img/Cart1 with buy.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- banner start -->
+    <section class="my-4">
+      <div class="container">
+        <div class="row">
+          <img src="assets/img/Frame 560.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- flash sale start -->
+    <section class="flash-sale-section py-3 py-md-5">
+      <div class="container">
+        <div class="d-flex align-items-center gap-2 my-3 mx-2">
+          <span class="badger"></span>
+          <span class="sub">Today's</span>
+        </div>
+        <!-- Header -->
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center mb-4 flex-wrap"
+        >
+          <h4 class="fw-bold mt-2 mt-md-0 text-start">Flash Sales</h4>
+
+          <div
+            class="flash-sale-timer d-flex flex-wrap justify-content-center gap-2"
+          >
+            <div class="flash-sale-box text-center">
+              <span class="label">Days</span>
+              <span class="value" id="days">03</span>
+            </div>
+            <div class="flash-sale-box text-center">
+              <span class="label">Hours</span>
+              <span class="value" id="hours">23</span>
+            </div>
+            <div class="flash-sale-box text-center">
+              <span class="label">Minutes</span>
+              <span class="value" id="minutes">19</span>
+            </div>
+            <div class="flash-sale-box text-center">
+              <span class="label">Seconds</span>
+              <span class="value" id="seconds">56</span>
+            </div>
+          </div>
+
+          <div
+            class="btn-produk d-flex gap-2 justify-content-end w-lg-auto mt-3 mt-lg-0"
+          >
+            <button class="scroll-btn" onclick="scrollToLeftProduct()">
+              <img
+                src="assets/img/icons_arrow-left.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+            <button class="scroll-btn" onclick="scrollToRightProduct()">
+              <img
+                src="assets/img/icons arrow-right.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Produk Scroll -->
+        <div class="scroll-container" id="productScroll">
+          <!-- Product 1 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="text-center my-5">
+          <button class="btn-custom">View All Products</button>
+        </div>
+        <hr />
+      </div>
+    </section>
+    <!-- flash sale end -->
+
+    <!-- categories start -->
+    <section class="py-5">
+      <div class="container">
+        <div class="d-flex align-items-center gap-2 my-3 mx-2">
+          <span class="badger"></span>
+          <span class="sub">Categories</span>
+        </div>
+        <!-- Header -->
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center mb-4 gap-3 flex-wrap"
+        >
+          <div
+            class="d-flex align-items-center gap-3 flex-column flex-md-row text-center text-md-start"
+          >
+            <h4 class="fw-bold mb-0 me-md-2">Browse By Category</h4>
+          </div>
+          <div
+            class="btn-produk d-flex gap-2 justify-content-end w-lg-auto mt-3 mt-lg-0"
+          >
+            <button class="scroll-btn" onclick="scrollToLeftCategory()">
+              <img
+                src="assets/img/icons_arrow-left.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+            <button class="scroll-btn" onclick="scrollToRightCategory()">
+              <img
+                src="assets/img/icons arrow-right.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="scroll-container box-category" id="categoriesScroll">
+          <!-- Category 1 -->
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-CellPhone.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>Phones</span>
+          </div>
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-Computer.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>Computers</span>
+          </div>
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-SmartWatch.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>SmartWatch</span>
+          </div>
+          <div class="category-card-camera d-flex flex-column">
+            <img
+              src="assets/img/Category-Camera.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>Camera</span>
+          </div>
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-Headphone.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>HeadPhone</span>
+          </div>
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-Gamepad.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>Gaming</span>
+          </div>
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-Headphone.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>Handphone</span>
+          </div>
+          <div class="category-card d-flex flex-column">
+            <img
+              src="assets/img/Category-Headphone.png"
+              alt=""
+              style="width: 40px; margin: 7px auto"
+            />
+            <span>Handphone</span>
+          </div>
+        </div>
+        <hr class="mt-5" />
+      </div>
+    </section>
+    <!-- categories end -->
+
+    <!-- best produk start -->
+    <section class="flash-sale-section py-3 py-md-5">
+      <div class="container">
+        <div class="d-flex align-items-center gap-2 my-3 mx-2">
+          <span class="badger"></span>
+          <span class="sub">This Month</span>
+        </div>
+        <!-- Header -->
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center mb-4 flex-wrap"
+        >
+          <h4 class="fw-bold mt-2 mt-md-0 text-start">Best Selling Products</h4>
+          <div
+            class="btn-produk d-flex gap-2 justify-content-end w-lg-auto mt-3 mt-lg-0"
+          >
+            <button class="scroll-btn" onclick="scrollToLeftBestProduct()">
+              <img
+                src="assets/img/icons_arrow-left.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+            <button class="scroll-btn" onclick="scrollToRightBestProduct()">
+              <img
+                src="assets/img/icons arrow-right.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Produk Scroll -->
+        <div class="scroll-container" id="bestProductScroll">
+          <!-- Product 1 -->
+          <div class="product-card position-relative">
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- best produk end -->
+
+    <!-- banner start -->
+    <section class="my-4">
+      <div class="container">
+        <div class="row">
+          <img src="assets/img/Frame 600.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- explore product start -->
+    <section class="flash-sale-section py-3 py-md-5">
+      <div class="container">
+        <div class="d-flex align-items-center gap-2 my-3 mx-2">
+          <span class="badger"></span>
+          <span class="sub">Our Products</span>
+        </div>
+        <!-- Header -->
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center mb-4 flex-wrap"
+        >
+          <h4 class="fw-bold mt-2 mt-md-0 text-start">Explore Our Products</h4>
+          <div
+            class="btn-produk d-flex gap-2 justify-content-end w-lg-auto mt-3 mt-lg-0"
+          >
+            <button class="scroll-btn" onclick="scrollToLeftExProduct()">
+              <img
+                src="assets/img/icons_arrow-left.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+            <button class="scroll-btn" onclick="scrollToRightExProduct()">
+              <img
+                src="assets/img/icons arrow-right.png"
+                alt=""
+                style="width: 17px"
+              />
+            </button>
+          </div>
+        </div>
+
+        <!-- Produk Scroll -->
+        <div class="scroll-container" id="exProductScroll">
+          <!-- Product 1 -->
+          <div class="product-card position-relative">
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="scroll-container">
+          <!-- Product 1 -->
+          <div class="product-card position-relative">
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <!-- Product 4 -->
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+
+          <div class="product-card position-relative">
+            <div class="discount-badge">-35%</div>
+            <img
+              src="assets/img/Frame 612.png"
+              alt="Keyboard"
+              class="img-fluid mb-2"
+            />
+            <h6>AK-900 Wired Keyboard</h6>
+            <div>
+              <span class="price">$960</span>
+              <span class="old-price">$1160</span>
+            </div>
+            <div class="rating">★★★★★ (75)</div>
+            <div class="position-absolute top-0 end-0 d-flex flex-column p-2">
+              <img
+                src="assets/img/Fill Heart.png"
+                alt=""
+                style="cursor: pointer"
+              />
+              <img
+                src="assets/img/Fill Eye.png"
+                alt=""
+                style="cursor: pointer"
+              />
+            </div>
+            <button class="btn btn-dark btn-sm w-100 mt-2">Add To Cart</button>
+          </div>
+        </div>
+
+        <div class="text-center my-5">
+          <button class="btn-custom">View All Products</button>
+        </div>
+      </div>
+    </section>
+    <!-- explore product end -->
+
+    <!-- featured start -->
+    <section class="flash-sale-section py-3 py-md-5">
+      <div class="container">
+        <div class="d-flex align-items-center gap-2 my-3">
+          <span class="badger"></span>
+          <span class="sub">Featured</span>
+        </div>
+        <!-- Header -->
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center mb-4 flex-wrap"
+        >
+          <h4 class="fw-bold mt-2 mt-md-0 text-start">New Arrival</h4>
+        </div>
+
+        <div class="grid-container">
+          <div class="item item-1">
+            <img src="assets/img/Frame 684.png" alt="" />
+          </div>
+          <div class="item item-2">
+            <img src="assets/img/Frame 685.png" alt="" />
+          </div>
+          <div class="bottom-right">
+            <div class="item item-3">
+              <img src="assets/img/Frame 686.png" alt="" />
+            </div>
+            <div class="item item-4">
+              <img src="assets/img/Frame 687.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- featured end -->
+
+    <!-- service start -->
+    <section class="py-5 my-3">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-4 my-3 my-md-0">
+            <img
+              src="assets/img/Services.png"
+              alt=""
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h6>FREE AND FAST DELIVERY</h6>
+            <p class="small">Free delivery for all orders over $140</p>
+          </div>
+          <div class="col-md-4 my-3 my-md-0">
+            <img
+              src="assets/img/Services (1).png"
+              alt=""
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h5>24/7 CUSTOMER SERVICE</h5>
+            <p class="small">Friendly 24/7 customer support</p>
+          </div>
+          <div class="col-md-4 my-3 my-md-0">
+            <img
+              src="assets/img/Services (2).png"
+              alt=""
+              class="mb-3"
+              style="width: 60px"
+            />
+            <h6>MONEY BACK GUARANTEE</h6>
+            <p style="font-size: 14px">We reurn money within 30 days</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service end -->
+
+    <!-- footer start -->
+    <div class="footer">
+      <div class="container">
+        <div class="grid-footer">
+          <div>
+            <h3>Exclusive</h3>
+            <h5>Subscribe</h5>
+            <p>Get 10% off your first order</p>
+            <div class="input-mail position-relative">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                style="color: #fafafa;"
+              />
+              <button
+                class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent "
+              >
+                <img src="assets/img/icon-send.png" alt="" class="small" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p>exclusive@gmail.com</p>
+            <p>+88015-88888-9999</p>
+          </div>
+          <div>
+            <h3>Account</h3>
+            <p>My Account</p>
+            <p>Login / Register</p>
+            <p>Cart</p>
+            <p>Wishpst</p>
+            <p>Shop</p>
+          </div>
+          <div>
+            <h3>Quick Link</h3>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row text-center pt-5 pb-3"
+      style="background-color: black; color: #fafafa"
+    >
+      <hr />
+      <p class="m-0">&copy; Copyright Rimel 2022. All right reserved</p>
+    </div>
+    <!-- footer end -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
