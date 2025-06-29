@@ -514,7 +514,7 @@
   .input-wrapper {
     position: absolute;
     top: 40px;
-    left: -200px;
+    left: -160px;
   }
 }
 
@@ -522,6 +522,6 @@
   .input-wrapper {
     position: absolute;
     top: 40px;
-    left: -190px;
+    left: -140px;
   }
 }
