@@ -1,10 +1,38 @@
-const navLinks = document.querySelectorAll(".nav-link");
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("navLinks");
+const searchIcon = document.getElementById("searchIcon");
+const links = document.querySelectorAll("nav a");
+const searchInput = document.getElementById("searchInput");
+const closeSearch = document.getElementById("clearIcon");
 
-navLinks.forEach((link) => {
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navLinks.classList.toggle("active");
+});
+
+searchIcon.addEventListener("click", () => {
+  if (searchInput.style.display === "block") {
+    searchInput.style.display = "none";
+    closeSearch.style.display = "none";
+  } else {
+    searchInput.style.display = "block";
+    closeSearch.style.display = "block";
+    searchInput.focus();
+  }
+});
+
+closeSearch.addEventListener("click", () => {
+  searchInput.value = "";
+  closeSearch.style.display = "none";
+  searchInput.style.display = "none";
+  searchInput.focus();
+});
+
+links.forEach((link) => {
   link.addEventListener("click", function () {
-    navLinks.forEach((l) => l.classList.remove("active"));
+    links.forEach((l) => l.classList.remove("active"));
 
-    this.classList.toggle("active");
+    this.classList.add("active");
   });
 });
 

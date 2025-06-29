@@ -10,65 +10,83 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg bg-white shadow-sm px-3 py-2">
-      <div class="container d-flex justify-content-between align-items-center">
-        <!-- Brand -->
-        <a class="navbar-brand fw-bold" href="#">Exclusive</a>
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">Exclusive</div>
 
-        <!-- Toggler (mobile) -->
-        <button
-          class="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarContent"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="nav-links" id="navLinks">
+          <a href="#" class="active">Home</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="#">Sign Up</a>
+        </nav>
 
-        <!-- Navbar content -->
-        <div class="collapse navbar-collapse" id="navbarContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Sign Up</a></li>
-          </ul>
-          <div class="d-flex align-items-center gap-3">
-            <!-- Search -->
-            <div class="search-box position-relative">
-              <input
-                class="form-control form-control-sm pe-5 small"
-                type="text"
-                placeholder="Search"
-              />
-              <button
-                class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent pe-2"
-              >
-                <img src="assets/img/Component 2.png" alt="" class="small" />
-              </button>
+        <div class="icons">
+          <div class="search-container" id="searchContainer">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Search..." id="searchInput" />
+              <i class="fas fa-times close-icon" id="clearIcon"></i>
             </div>
-            <!-- Icons -->
-            <a href="#" class="text-dark">
-              <img src="assets/img/Wishlist.png" alt="" />
+            <i class="fas fa-search" id="searchIcon"></i>
+          </div>
+
+          <!-- Wishlist -->
+          <a href="#" class="icon-wrapper">
+            <i class="far fa-heart"></i>
+            <span class="badge">3</span>
+          </a>
+
+          <!-- Cart -->
+          <a href="#" class="icon-wrapper">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge">5</span>
+          </a>
+
+          <li class="nav-item dropdown icon-wrapper">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fa-regular fa-user"></i>
             </a>
-            <a href="#" class="text-dark">
-              <img src="assets/img/Cart1 with buy.png" alt="" />
-            </a>
+            <ul class="dropdown-menu" style="list-style: none">
+              <li>
+                <a class="dropdown-item" href="#" style="font-size: 14px"
+                  >Manage My Account</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" style="font-size: 14px"
+                  >Logout</a
+                >
+              </li>
+            </ul>
+          </li>
+          
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
       </div>
-    </nav>
+    </header>
     <!-- navbar end -->
 
     <!-- banner start -->
-    <section class="my-4">
+    <section class="my-5 md-my-4">
       <div class="container">
         <div class="row">
           <img src="assets/img/Frame 560.png" alt="" />
@@ -1084,10 +1102,10 @@
               <input
                 type="text"
                 placeholder="Enter your email"
-                style="color: #fafafa;"
+                style="color: #fafafa"
               />
               <button
-                class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent "
+                class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent"
               >
                 <img src="assets/img/icon-send.png" alt="" class="small" />
               </button>
@@ -1118,7 +1136,7 @@
       </div>
     </div>
     <div
-      class="row text-center pt-5 pb-3"
+      class="text-center pt-5 pb-3"
       style="background-color: black; color: #fafafa"
     >
       <hr />
