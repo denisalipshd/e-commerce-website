@@ -53,7 +53,7 @@
 
           <!-- Cart -->
           <a href="#" class="icon-wrapper">
-            <i class="fa-regular fa-user"></i>
+             <i class="fa-regular fa-user"></i>
           </a>
 
           <div class="hamburger" id="hamburger">
@@ -67,8 +67,8 @@
     <!-- navbar end -->
 
     <!-- main section start -->
-    <section class="py-5">
-      <div class="container">
+    <section class="py-5 px-2">
+      <div class="container contact-page">
         <!-- Breadcrumb -->
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb mb-4">
@@ -77,100 +77,70 @@
                 >Home</a
               >
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Cart</li>
+            <li class="breadcrumb-item active" aria-current="page">Contact</li>
           </ol>
         </nav>
 
-        <!-- Cart Table -->
-        <div class="table-responsive mb-4">
-          <table class="table align-middle text-center">
-            <thead class="table-light">
-              <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th style="width: 120px">Quantity</th>
-                <th>Subtotal</th>
-              </tr>
-            </thead>
-            <tbody>
-              <!-- Product Row 1 -->
-              <tr>
-                <td class="d-flex align-items-center gap-3">
-                  <img
-                    src="assets/img/g27cq4-500x500 1.png"
-                    width="60"
-                    alt=""
-                  />
-                  <span>LCD Monitor</span>
-                </td>
-                <td>$650</td>
-                <td>
-                  <select class="form-select form-select-sm">
-                    <option>01</option>
-                    <option>02</option>
-                  </select>
-                </td>
-                <td>$650</td>
-              </tr>
-
-              <!-- Product Row 2 -->
-              <tr>
-                <td class="d-flex align-items-center gap-3">
-                  <img src="assets/img/g92-2-500x500 1.png" width="60" alt="" />
-                  <span>HI Gamepad</span>
-                </td>
-                <td>$550</td>
-                <td>
-                  <select class="form-select form-select-sm">
-                    <option>01</option>
-                    <option selected>02</option>
-                    <option>03</option>
-                  </select>
-                </td>
-                <td>$1100</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <!-- Actions -->
-        <div class="d-flex justify-content-between flex-wrap gap-3 mb-4">
-          <a href="#" class="btn btn-outline-dark small">Return To Shop</a>
-          <button class="btn btn-dark small">Update Cart</button>
-        </div>
-
-        <!-- Coupon & Cart Total -->
-        <div class="row g-4">
-          <!-- Coupon -->
-          <div class="col-lg-6">
-            <div class="d-flex flex-wrap gap-2">
-              <input
-                type="text"
-                class="form-control w-50"
-                placeholder="Coupon Code"
-              />
-              <button class="btn btn-danger small">Apply Coupon</button>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="contact-info-card">
+              <div class="icon-wrapper">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <h4>Call To Us</h4>
+              <p>We are available 24/7, 7 days a week.</p>
+              <p>Phone: +8801611122222</p>
+              <div class="divider"></div>
+              <div class="icon-wrapper">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h4>Write To Us</h4>
+              <p>Fill out our form and we will contact you within 24 hours.</p>
+              <p>Emails: customer@exclusive.com</p>
+              <p>Emails: support@exclusive.com</p>
             </div>
           </div>
-
-          <!-- Cart Total -->
-          <div class="col-lg-6">
-            <div class="border p-4 rounded shadow-sm">
-              <h5 class="mb-3">Cart Total</h5>
-              <ul class="list-unstyled mb-4">
-                <li class="d-flex justify-content-between border-bottom pb-2">
-                  <span>Subtotal:</span><strong>$1750</strong>
-                </li>
-                <li class="d-flex justify-content-between border-bottom py-2">
-                  <span>Shipping:</span><strong>Free</strong>
-                </li>
-                <li class="d-flex justify-content-between pt-2">
-                  <span>Total:</span><strong>$1750</strong>
-                </li>
-              </ul>
-              <button class="btn btn-danger w-100 small">
-                Proceed to checkout
-              </button>
+          <div class="col-lg-8">
+            <div class="contact-form-card">
+              <form>
+                <div class="row">
+                  <div class="col-md-4">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <input
+                      type="tel"
+                      class="form-control"
+                      placeholder="Your Phone"
+                    />
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    placeholder="Your Message"
+                    rows="6"
+                  ></textarea>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="btn btn-send-message">
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -231,6 +201,7 @@
       <p class="m-0">&copy; Copyright Rimel 2022. All right reserved</p>
     </div>
     <!-- footer end -->
+
     <script src="assets/js/script.js"></script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
   </body>
