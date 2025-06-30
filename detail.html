@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>devnis SHOP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar start -->
+    <header class="navbar shadow-sm">
+      <div class="container">
+        <div class="logo">Exclusive</div>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="index.html" class="active">Home</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+          <a href="#">Sign Up</a>
+        </nav>
+
+        <div class="icons">
+          <div class="search-container" id="searchContainer">
+            <div class="input-wrapper">
+              <input type="text" placeholder="Search..." id="searchInput" />
+              <i class="fas fa-times close-icon" id="clearIcon"></i>
+            </div>
+            <i class="fas fa-search" id="searchIcon"></i>
+          </div>
+
+          <!-- Wishlist -->
+          <a href="wishlist.html" class="icon-wrapper">
+            <i class="far fa-heart"></i>
+            <span class="badge">3</span>
+          </a>
+
+          <!-- Cart -->
+          <a href="cart.html" class="icon-wrapper">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge">5</span>
+          </a>
+
+          <!-- Cart -->
+          <a href="#" class="icon-wrapper">
+            <i class="fa-regular fa-user"></i>
+          </a>
+
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- navbar end -->
+
+    <!-- section main start -->
+    <section class="py-5">
+      <div class="container">
+        <!-- Breadcrumb -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-4">
+            <li class="breadcrumb-item">
+              <a href="index.html" class="text-muted text-decoration-none"
+                >Account</a
+              >
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">Gaming</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Havic HV G-92 Gamepad
+            </li>
+          </ol>
+        </nav>
+
+        <!-- Product Detail Section -->
+        <div class="d-flex flex-column flex-lg-row gap-4">
+          <!-- Thumbnail Images -->
+          <div class="d-flex flex-lg-column flex-row gap-3">
+            <div style="background: #dddddd">
+              <img
+                src="assets/img/image 57.png"
+                alt=""
+                class="img-fluid"
+                style="width: 120px"
+              />
+            </div>
+            <div style="background: #dddddd">
+              <img
+                src="assets/img/image 58.png"
+                alt=""
+                class="img-fluid"
+                style="width: 120px"
+              />
+            </div>
+            <div style="background: #dddddd">
+              <img
+                src="assets/img/image 59.png"
+                alt=""
+                class="img-fluid"
+                style="width: 120px"
+              />
+            </div>
+            <div style="background: #dddddd">
+              <img
+                src="assets/img/image 61.png"
+                alt=""
+                class="img-fluid"
+                style="width: 120px"
+              />
+            </div>
+          </div>
+
+          <!-- Main Image + Details -->
+          <div class="d-flex flex-column flex-lg-row gap-4 flex-grow-1">
+            <!-- Main Product Image -->
+            <div
+              class="flex-shrink-0"
+              style="background-color: #dddddd; padding: 70px 10px"
+            >
+              <img src="assets/img/image 63.png" alt="" class="img-fluid" />
+            </div>
+
+            <!-- Product Info -->
+            <div class="flex-grow-1">
+              <div class="d-flex flex-column gap-3">
+                <h4>Havic HV G-92 Gamepad</h4>
+                <span>$192.00</span>
+                <p class="small">
+                  PlayStation 5 Controller Skin. High quality vinyl with air
+                  channel adhesive for easy bubble-free install & mess-free
+                  removal. Pressure sensitive.
+                </p>
+              </div>
+
+              <hr />
+
+              <!-- Size Options -->
+              <div class="d-flex align-items-center gap-3 flex-wrap">
+                <span>Size:</span>
+                <div class="d-flex gap-2">
+                  <span class="small border border-1 black p-2 rounded-2"
+                    >XS</span
+                  >
+                  <span class="small border border-1 black p-2 rounded-2"
+                    >S</span
+                  >
+                  <span class="small border border-1 black p-2 rounded-2"
+                    >M</span
+                  >
+                  <span class="small border border-1 black p-2 rounded-2"
+                    >L</span
+                  >
+                  <span class="small border border-1 black p-2 rounded-2"
+                    >XL</span
+                  >
+                </div>
+              </div>
+
+              <!-- Quantity & Action Buttons -->
+              <div class="d-flex align-items-center mt-4 gap-3 flex-wrap">
+                <div>
+                  <span class="border border-1 black py-2 px-3">-</span>
+                  <span class="border border-1 black py-2 px-3">2</span>
+                  <span class="border border-1 black py-2 px-3">+</span>
+                </div>
+                <button class="btn btn-danger">Buy Now</button>
+                <span class="border border-1 black py-2 px-3">
+                  <i class="far fa-heart"></i>
+                </span>
+              </div>
+
+              <!-- Delivery Info -->
+              <div class="d-flex flex-column my-4 gap-3">
+                <div
+                  class="d-flex align-items-center gap-4 border border-1 black py-3 px-4"
+                >
+                  <img src="assets/img/icon-delivery.png" alt="Delivery Icon" />
+                  <div class="d-flex flex-column gap-2">
+                    <span>Free Delivery</span>
+                    <span class="small"
+                      >Enter your postal code for Delivery Availability</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="d-flex align-items-center gap-4 border border-1 black py-3 px-4"
+                >
+                  <img src="assets/img/Icon-return.png" alt="Delivery Icon" />
+                  <div class="d-flex flex-column gap-2">
+                    <span>Return Delivery</span>
+                    <span class="small"
+                      >Free 30 Days Delivery Returns. Details</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section main end -->
+
+    <!-- footer start -->
+    <div class="footer">
+      <div class="container">
+        <div class="grid-footer">
+          <div>
+            <h3>Exclusive</h3>
+            <h5>Subscribe</h5>
+            <p>Get 10% off your first order</p>
+            <div class="input-mail position-relative">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                style="color: #fafafa"
+              />
+              <button
+                class="position-absolute top-50 end-0 translate-middle-y border-0 bg-transparent"
+              >
+                <img src="assets/img/icon-send.png" alt="" class="small" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <h3>Support</h3>
+            <p>111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+            <p>exclusive@gmail.com</p>
+            <p>+88015-88888-9999</p>
+          </div>
+          <div>
+            <h3>Account</h3>
+            <p>My Account</p>
+            <p>Login / Register</p>
+            <p>Cart</p>
+            <p>Wishpst</p>
+            <p>Shop</p>
+          </div>
+          <div>
+            <h3>Quick Link</h3>
+            <p>Privacy Policy</p>
+            <p>Terms of Use</p>
+            <p>FAQ</p>
+            <p>Contact</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="text-center pt-5 pb-3"
+      style="background-color: black; color: #fafafa"
+    >
+      <hr />
+      <p class="m-0">&copy; Copyright Rimel 2022. All right reserved</p>
+    </div>
+    <!-- footer end -->
+
+    <script src="assets/js/script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
